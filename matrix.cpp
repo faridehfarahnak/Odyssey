@@ -155,6 +155,11 @@ template <class T> Matrix<T>& Matrix<T> :: operator* (const Matrix<T>& l)
 		cout<< e.what()<<endl;
 		exit(-1);
 	}
+	catch(exception& e)
+	{
+		cout<<e.what()<<endl;
+		exit(-1);
+	}
 	
 	return *this;
 }
